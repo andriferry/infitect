@@ -48,11 +48,12 @@ const menu = ref(
         </nav>
       </div>
     </div>
+    <img class="absolute top-0 right-0" src="@/assets/circle.svg" alt="">
     <!-- This is hero -->
   </div>
 </template>
 
 
-<style>
+<style scoped>
 
 </style>
