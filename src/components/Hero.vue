@@ -33,8 +33,8 @@ const menu = ref(
 <template>
   <div class="w-screen h-screen bg-basecolor">
     <div class="flex justify-center">
-      <div class="container">
-        <nav class="text-white flex items-center justify-between p-6">
+      <div class="container py-6">
+        <nav class="text-white relative z-20 flex items-center justify-between ">
           <p class="title font-semibold text-[24px]">Infinitech.</p>
 
           <div class="flex gap-5">
@@ -46,9 +46,25 @@ const menu = ref(
             Contact us
           </button>
         </nav>
+
+        <div class="mt-16 w-full">
+          <div class="grid grid-cols-2 text-white">
+            <p class="font-bold text-[64px] w-[700px]">
+              We Bring You To The Future Of Technology
+            </p>
+            <div class="w-full justify-end flex">
+              <div class="flex flex-col  justify-between w-[415px]">
+                <p class="text-[16px] leading-loose">Infinitech is an IT company that could transform your digital problems into a new wonderful solutions that could scale your business up.</p>
+                <button class="rounded-full bg-secondarycolor flex items-center justify-center gap-2 w-[154px] h-[48px] font-medium text-[16px]">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <img class="absolute top-0 right-0" src="@/assets/circle.svg" alt="">
+    <img class="absolute z-0 top-0 right-0" src="@/assets/circle.svg" alt="">
     <!-- This is hero -->
   </div>
 </template>
