@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         basecolor: '#111E36',
         primarycolor: '#00dc96',
+        secondarycolor: '#055FFC'
       },
     },
   },
