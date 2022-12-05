@@ -31,7 +31,7 @@ const menu = ref(
 
 
 <template>
-  <div class="w-screen h-screen bg-basecolor">
+  <div class="w-screen relative min-h-screen overflow-hidden bg-basecolor">
     <div class="flex justify-center">
       <div class="container py-6">
         <nav class="text-white relative z-20 flex items-center justify-between ">
@@ -65,7 +65,7 @@ const menu = ref(
       </div>
     </div>
     <img class="absolute z-0 top-0 right-0" src="@/assets/circle.svg" alt="">
-    <!-- This is hero -->
+    <img class="absolute z-0 -left-[50px] -bottom-[250px]" src="@/assets/bigcircle.png" alt="">
   </div>
 </template>
 
