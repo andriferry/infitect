@@ -1,17 +1,13 @@
 <script setup>
 import Hero from "@/components/Hero.vue";
+import Features from "@/components/Features.vue";
 
 </script>
 
 <template>
-  <div class="bg-white w-full font-body min-h-screen">
+  <div class="bg-white w-full font-body">
     <Hero />
-    <!-- <div class="w-full h-screen">
-      hello
-    </div> -->
-    <!-- <div class="container h-full">
-      Hello
-    </div> -->
+    <Features />
   </div>
 </template>
 

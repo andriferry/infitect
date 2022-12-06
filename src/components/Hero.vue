@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from "vue";
 import { mdiEmail } from "@mdi/js";
-import Icon from "@/components/Icon.vue";
 
 const menu = ref(
   [
@@ -31,7 +30,7 @@ const menu = ref(
 
 
 <template>
-  <div class="w-screen relative min-h-screen overflow-hidden bg-basecolor">
+  <div class="w-full relative min-h-screen bg-basecolor">
     <div class="flex justify-center">
       <div class="container py-6">
         <nav class="text-white relative z-20 flex items-center justify-between ">
