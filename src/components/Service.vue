@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { mdiCheckCircle } from "@mdi/js";
+import WhyUs from "@/components/Whyus.vue"
 
 const ourService = ref(
   [
@@ -42,7 +43,7 @@ const ourService = ref(
       <div class="flex mt-24 justify-center w-full">
         <div class="grid mb-20 grid-flow-col gap-4 auto-cols-auto">
           <div class="flex flex-col items-center gap-4" v-for="(service, index) in ourService" :key="index">
-            <img class="w-64 h-80 rounded-2xl" :src="service.imgUrl" alt="">
+            <img class="h-80 rounded-2xl" :src="service.imgUrl" alt="">
             <div class="w-[288px] mt-auto px-3">
               <p class="w-full text-[32px] capitalize font-semibold leading-10 text-slate-700">
                 {{service.title}}
@@ -60,6 +61,9 @@ const ourService = ref(
           </div>
         </div>
       </div>
+
+      <WhyUs/>
+      
     </div>
   </div>
 </template>
