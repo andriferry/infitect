@@ -46,7 +46,7 @@ const menu = ref(
           </button>
         </nav>
 
-        <div class="mt-16 w-full">
+        <div class="h-96 flex items-center w-full">
           <div class="grid grid-cols-2 text-white">
             <p class="font-bold text-[64px] w-[700px]">
               We Bring You To The Future Of Technology
