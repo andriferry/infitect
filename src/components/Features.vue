@@ -35,7 +35,7 @@ const client = ref([
 
 <template>
   <div class="w-full flex justify-center">
-    <div class="container  relative">
+    <div class="container relative">
       <div class="grid grid-cols-3 gap-3 relative z-30 -top-60">
         <img v-for="data, index in heroImage" :key="index" class="rounded-lg object-cover h-[420px] w-[402px]" :src="data" alt="">
       </div>
