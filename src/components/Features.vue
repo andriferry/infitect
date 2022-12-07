@@ -36,11 +36,12 @@ const client = ref([
 <template>
   <div class="w-full flex justify-center">
     <div class="container relative">
-      <div class="grid grid-cols-3 gap-3 relative z-30 -top-60">
+       <!-- -top-60 -top-16 -->
+      <div class="grid grid-cols-3 gap-3 relative z-30 -mt-60">
         <img v-for="data, index in heroImage" :key="index" class="rounded-lg object-cover h-[420px] w-[402px]" :src="data" alt="">
       </div>
 
-      <div class="flex text-gray-900 justify-center relative -top-16 items-center flex-col">
+      <div class="flex text-gray-900 mt-36 justify-center relative  items-center flex-col">
         <h1 class="font-semibold w-[860px] text-[40px] text-center">
           We Helped 30+ Companies From Medium Until Big Scale Companies
         </h1>
