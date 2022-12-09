@@ -28,11 +28,11 @@ const solution = ref(
         backgroundColor: {background: 'rgba(5, 95, 252, 0.08)'}
       },
       title: {
-        text: 'We Provide New Solutions and Tools',
+        text: 'Transform Problems into Smart Solutions',
         color: 'text-gray-700'
       },
       subtitle: {
-        text: 'We provide your needs with new ways of the solutions way.',
+        text: 'Our mission is to transform your problems into the smartest one.',
         color: 'text-gray-700'
       }, 
     },
@@ -44,11 +44,11 @@ const solution = ref(
         backgroundColor: {background: 'rgba(5, 95, 252, 0.08)'}
       },
       title: {
-        text: 'We Provide New Solutions and Tools',
+        text: 'Work Faster, Deliver Better',
         color: 'text-gray-700'
       },
       subtitle: {
-        text: 'We provide your needs with new ways of the solutions way.',
+        text: 'Our workflow is to work fast and give you the best solution one.',
         color: 'text-gray-700'
       }, 
     },
@@ -60,7 +60,7 @@ const solution = ref(
         backgroundColor: {background: 'rgba(255, 255, 255, 0.08)'}
       },
       title: {
-        text: 'We Provide New Solutions and Tools',
+        text: 'Your Successful Business is Our Priority',
         color: 'text-white'
       },
       subtitle: {
@@ -91,8 +91,14 @@ const solution = ref(
       </div>
     </div>
 
-     <div class="">
-      Hello
+     <div class="p-5 w-[459px] h-[430px] flex justify-start flex-col">
+      <small class="uppercase text-secondarycolor text-lg font-medium leading-6">- why us?</small>
+      <p class="font-semibold text-5xl text-[#10141B] leading-[67px]">
+        Your Wonderful Business is our First priority
+      </p>
+      <p class="subtitle text-base font-medium leading-7 text-slate-700 mt-6">
+        We prioritize your successful business mission and vission with our wonderful features that can help you manage your days.
+      </p>
     </div>
   </div>
 </template>
