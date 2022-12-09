@@ -2,6 +2,7 @@
 import Hero from "@/components/Hero.vue";
 import Features from "@/components/Features.vue";
 import Service from "@/components/Service.vue";
+import Team from "@/components/Team.vue";
 
 </script>
 
@@ -10,6 +11,7 @@ import Service from "@/components/Service.vue";
     <Hero />
     <Features />
     <Service />
+    <Team />
   </div>
 </template>
 
