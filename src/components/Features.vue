@@ -3,9 +3,9 @@ import { ref } from "vue";
 import { mdiMicrosoft, mdiGoogle , mdiDropbox, mdiTrello, mdiMicrosoftXbox } from "@mdi/js";
 
 const heroImage = ref([
-  'https://images.unsplash.com/photo-1576400883215-7083980b6193?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1713&q=80',
-  'https://images.unsplash.com/photo-1625314887424-9f190599bd56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
-  'https://images.unsplash.com/photo-1608306448197-e83633f1261c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'
+  "bg-[url('https://images.unsplash.com/photo-1576400883215-7083980b6193?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1713&q=80')]",
+  "bg-[url('https://images.unsplash.com/photo-1625314887424-9f190599bd56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80')]",
+  "bg-[url('https://images.unsplash.com/photo-1608306448197-e83633f1261c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80')]"
 ]);
 
 const client = ref([
@@ -36,9 +36,8 @@ const client = ref([
 <template>
   <div class="w-full flex justify-center">
     <div class="container relative">
-       <!-- -top-60 -top-16 -->
       <div class="grid grid-cols-3 gap-3 relative z-30 -mt-60">
-        <img v-for="data, index in heroImage" :key="index" class="rounded-2xl object-cover h-[420px] w-[402px]" :src="data" alt="">
+        <div v-for="url, index in heroImage" :key="index" :class="['rounded-2xl bg-cover w-[402px] h-[420px]' , url]"></div>
       </div>
 
       <div class="flex text-gray-900 mt-36 justify-center relative  items-center flex-col">
@@ -64,7 +63,7 @@ const client = ref([
               <span class="text-secondarycolor">Founder and CTO Infitech</span>
             </p>
           </div>
-          <img class="h-[551px] rounded-2xl" src="https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="">
+          <div class="w-[508px] rounded-xl bg-cover h-[551px] bg-[url('https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80')]"></div>
         </div>
       </div>
     </div>

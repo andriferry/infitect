@@ -20,20 +20,20 @@
             <div class="flex gap-4">
               <div class="formgroup flex flex-col gap-2">
                 <label for="" class="text-sm font-medium leading-5">First Name</label>
-                <input class="block w-full px-3 py-2 bg-white border border-slate-300 text-black rounded-md placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" type="text" placeholder="First Name">
+                <input class="block w-full px-3 py-2 bg-white border border-slate-300 text-black rounded-md placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500" type="text" placeholder="First Name">
               </div>
               <div class="formgroup flex flex-col gap-2">
                 <label for="" class="text-sm font-medium leading-5">Last Name</label>
-                <input class="block w-full px-3 py-2 bg-white border border-slate-300 text-black rounded-md placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" type="text" placeholder="Last Name">
+                <input class="block w-full px-3 py-2 bg-white border border-slate-300 text-black rounded-md placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500" type="text" placeholder="Last Name">
               </div>
             </div>
             <div class="formgroup flex flex-col gap-2">
               <label for="" class="text-sm font-medium leading-5">Email</label>
-              <input class="block w-full px-3 py-2 bg-white border border-slate-300 text-black rounded-md placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" type="text" placeholder="your@company.com">
+              <input class="block w-full px-3 py-2 bg-white border border-slate-300 text-black rounded-md placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500" type="text" placeholder="your@company.com">
             </div>
             <div class="formgroup flex flex-col gap-2">
               <label for="" class="text-sm font-medium leading-5">Message</label>
-              <textarea placeholder="Message" class="block w-full px-3 py-2 bg-white border border-slate-300 text-black rounded-md placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" rows="5"></textarea>
+              <textarea placeholder="Message" class="block w-full px-3 py-2 bg-white border border-slate-300 text-black rounded-md placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500" rows="5"></textarea>
             </div>
             <div class="w-full">
               <button class="w-full bg-secondarycolor rounded-lg p-2">
