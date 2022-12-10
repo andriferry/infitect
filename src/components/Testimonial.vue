@@ -29,7 +29,7 @@ const testimonials = ref(
 
 
 <template>
-  <div class="flex mt-20 h-screen justify-center w-full">
+  <div class="flex mt-20 mb-20 justify-center w-full">
     <div class="container">
       <div class="title">
         <p class="text-[18x] text-secondarycolor font-medium leading-6 uppercase">- testimonials</p>

@@ -4,6 +4,7 @@ import Features from "@/components/Features.vue";
 import Service from "@/components/Service.vue";
 import Team from "@/components/Team.vue";
 import Testimonial from "@/components/Testimonial.vue";
+import Form from "@/components/Form.vue";
 
 </script>
 
@@ -14,9 +15,6 @@ import Testimonial from "@/components/Testimonial.vue";
     <Service />
     <Team />
     <Testimonial />
+    <Form />
   </div>
 </template>
-
-<style scoped>
-
-</style>
