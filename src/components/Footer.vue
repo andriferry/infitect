@@ -31,9 +31,9 @@ const bottomMenu = ref(
 
 
 <template>
-  <div class="w-full h-[417px] items-center flex justify-center">
+  <div class="w-full min-h-[417px] items-center flex justify-center">
     <div class="container">
-      <div class="grid grid-cols-3 p-5">
+      <div class="grid grid-cols-1 lg:grid-cols-3 p-5 gap-4">
         <div class="h-full flex gap-5 col-span-1 flex-col w-[352px]">
           <p class="font-semibold text-[32px]">
             Infi<span class="text-secondarycolor">tech.</span>
@@ -51,17 +51,16 @@ const bottomMenu = ref(
 
         <div class="col-span-2 w-full items-end flex">
           <div class="container">
-            <div class="grid grid-cols-3 gap-4">
-            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
               <div v-for="(menu , index) in bottomMenu" :key="index" class="flex flex-col items-start justify-end gap-5">
                 <p class="font-medium text-xl capitalize leading-[26px] text-slate-700">
                   {{menu.text}}
                 </p>
-                <ul>
-                  <li v-for="child , index in menu.child" :key="index" class="text-base py-2 font-normal leading-8 text-gray-500">
+                <div class="flex lg:flex-col gap-4 flex-wrap">
+                  <div v-for="child , index in menu.child" :key="index" class="text-base py-2 font-normal leading-8 text-gray-500">
                     <button class="capitalize">{{child}}</button>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
