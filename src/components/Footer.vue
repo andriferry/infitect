@@ -2,6 +2,8 @@
 import {mdiYoutube , mdiFacebook , mdiInstagram} from "@mdi/js";
 import { ref } from 'vue';
 
+const date = ref(new Date())
+
 const socialmedia = ref(
   [
     mdiInstagram, mdiFacebook, mdiYoutube
@@ -66,6 +68,9 @@ const bottomMenu = ref(
         </div>
       </div>
       <div class="w-full mt-5 border-t border-slate-200 mx-4"></div>
+      <div class="w-full font-normal text-slate-700/50 text-center p-5">
+        Copyright © {{date.getFullYear()}}  Infinitech. All rights reserved.
+      </div>
     </div>  
   </div>  
 </template>
