@@ -5,6 +5,7 @@ import Service from "@/components/Service.vue";
 import Team from "@/components/Team.vue";
 import Testimonial from "@/components/Testimonial.vue";
 import Form from "@/components/Form.vue";
+import Footer from "@/components/Footer.vue";
 
 </script>
 
@@ -16,5 +17,6 @@ import Form from "@/components/Form.vue";
     <Team />
     <Testimonial />
     <Form />
+    <Footer />
   </div>
 </template>
