@@ -3,17 +3,16 @@
 </script>
 
 <template>
-<!-- h-[682px] -->
   <div class="w-full h-full md:py-20 flex justify-center items-center relative bg-basecolor">
     <img class="right-0 absolute" src="@/assets/leftformcircle.svg" alt="">
-    <div class="container text-white lg:h-[442px] h-full relative z-40">
-      <div class="grid h-full p-10 gap-4 items-center bg grid-cols-1">
-        <div class="flex gap-5 flex-col items-center text-start md:text-center md:p-14 lg:w-[496px]">
+    <div class="container text-white  h-full relative z-40">
+      <div class="grid h-full p-10 lg:p-5 xl:p-0 gap-4 items-center grid-cols-1 lg:grid-cols-2">
+        <div class="flex gap-5 flex-col items-center lg:items-start text-start md:text-center md:p-14 lg:p-0 lg:w-[496px]">
           <p class="text-sm md:text-lg font-medium md:leading-6 leading-4">- START OUR COOPERATION</p>
-          <p class="font- text-center md:w-[496px] text-2xl lg:text-5xl md:text-[32px] leading-8 lg:leading-[67px] md:leading-10">
+          <p class="lg:text-start text-center md:w-[496px] text-2xl lg:text-5xl md:text-[32px] leading-8 lg:leading-[67px] md:leading-10">
             Let us know your needs, We give you the best solutions
           </p>
-          <p class="text-sm text-center md:w-[496px] font-medium text-[#DDE0EA] md:leading-7 leading-5">
+          <p class="text-sm text-center lg:text-start md:w-[496px] font-medium text-[#DDE0EA] md:leading-7 leading-5">
             Let us know your problems by filling the forms and we will give you the best services you never got before.
           </p>
         </div>
