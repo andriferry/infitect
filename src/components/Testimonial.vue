@@ -30,15 +30,17 @@ const testimonials = ref(
 
 <template>
   <div class="flex mt-20 mb-20 justify-center w-full">
-    <div class="container">
+    <div class="container p-5">
       <div class="title">
-        <p class="text-[18x] text-secondarycolor font-medium leading-6 uppercase">- testimonials</p>
-        <p class="font-semibold capitalize text-[#10141B] w-[640px] mt-3 text-[48px]">
+        <p class="text-sm md:text-lg text-secondarycolor font-medium leading-6 uppercase">
+          - testimonials
+        </p>
+        <p class="font-semibold capitalize text-[#10141B] w-full md:w-[640px] mt-3 text-2xl leading-9 md:text-5xl">
           here are what our customers said about us
         </p>
       </div>
 
-      <div class="grid mt-10 grid-cols-4 gap-6 py-5">
+      <!-- <div class="grid mt-10 grid-cols-4 gap-6 py-5">
         <div v-for="(data, index) in testimonials" :key="index" class="flex flex-col p-2 gap-4">
           <p class="text-base font-medium leading-7">“Infinitech is the best team for this year! I am very appreciated with their works, especially when they helped me to grow up our business.”</p>
           <div class="flex gap-5 items-center">
@@ -49,7 +51,7 @@ const testimonials = ref(
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>  
 </template>
