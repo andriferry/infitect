@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue';
+import {Perspective} from '@egjs/flicking-plugins';
+
 const testimonials = ref(
   [
     {
@@ -57,6 +59,25 @@ const testimonials = ref(
           </div>
         </div>
       </div>
+
+
+      <!-- <div class="flex h-[500px] justify-center">
+        <div class="">
+          <Flicking :options="{renderOnlyVisible: true,  circular: true, defaultIndex: 2,}" class="mt-10 py-3">
+            <div v-for="(data, index) in testimonials" :key="index" class="flex flex-col p-2 gap-4">
+          <p class="text-base font-medium leading-7">“Infinitech is the best team for this year! I am very appreciated with their works, especially when they helped me to grow up our business.”</p>
+          <div class="flex gap-5 items-center">
+            <div class="w-16 h-16 bg-cover rounded-full" :class="data.imageUrl"></div>
+            <div class="flex gap-2 justify-start flex-col">
+              <p class="text-base font-semibold">{{data.name}}</p>
+              <p class="text-xs text-[#445160E0]/75 font-medium">CTO at {{data.companyName}}</p>
+            </div>
+          </div>
+        </div>
+          </Flicking>
+
+        </div>
+      </div> -->
     </div>
   </div>  
 </template>
