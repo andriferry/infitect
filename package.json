@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@egjs/vue3-flicking": "^4.10.4",
+    "@egjs/flicking-plugins": "^4.4.0",
     "@mdi/js": "^7.0.96",
     "vue": "^3.2.41"
   },
