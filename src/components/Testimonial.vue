@@ -71,9 +71,9 @@ const testimonials = ref(
        <div class="flex lg:hidden justify-center">
           <div class="w-[400px] sm:w-[900px]">
             <Flicking :options="options" :plugins="plugins" class="mt-10 py-3">
-              <div v-for="(data, index) in testimonials" :key="index" class="flex w-[400px] flex-col p-2 gap-5">
-                <p class="text-base font-medium leading-7">“Infinitech is the best team for this year! I am very appreciated with their works, especially when they helped me to grow up our business.”</p>
-                <div class="flex mt-3 gap-5 items-center">
+              <div v-for="(data, index) in testimonials" :key="index" class="flex w-[400px] flex-col p-5 gap-5">
+                <p class="text-base px-5 font-medium leading-7">“Infinitech is the best team for this year! I am very appreciated with their works, especially when they helped me to grow up our business.”</p>
+                <div class="flex mt-3 px-5 gap-5 items-center">
                   <div class="w-16 h-16 bg-cover rounded-full" :class="data.imageUrl"></div>
                   <div class="flex gap-2 justify-start flex-col">
                     <p class="text-base font-semibold">{{data.name}}</p>

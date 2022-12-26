@@ -1,6 +1,15 @@
 <script setup>
 import { ref } from 'vue';
+import { AutoPlay } from "@egjs/flicking-plugins";
 
+const plugins = ref([
+  new AutoPlay({ duration: 2000, direction: "NEXT", stopOnHover: false })
+])
+const options = ref({
+  renderOnlyVisible: true,
+  circular: true,
+  defaultIndex: 2,
+})
 const team = ref(
   [
     {
@@ -52,17 +61,29 @@ const team = ref(
 <template>
   <div class="flex mt-20 justify-center w-full">
     <div class="container">
-      <div class="title">
+      <div class="title p-3">
         <p class="text-[18x] text-secondarycolor font-medium leading-6 uppercase">- The Team</p>
-        <p class="font-semibold text-[#10141B] w-[640px] mt-3 text-[48px]">
+        <p class="font-semibold text-[#10141B] w-[340px] lg:w-[640px] mt-3 text-[24px] lg:text-[48px]">
           Meet our professional and experience teachers in here
         </p>
       </div>
-      <div class="grid grid-cols-4 gap-6 py-5">
+      <div class="lg:grid hidden grid-cols-4 gap-6 py-5">
         <div v-for="item, index in team" :key="index" class="flex flex-col items-start gap-3 justify-start">
           <div :class="['w-[288px] h-[310px] bg-cover bg-center rounded-xl', item.imageUrl]"></div>
           <p class="font-semibold capitalize text-3xl">{{item.name}}</p>
           <p class="font-medium text-xl text-gray-700">{{item.title}}</p>
+        </div>
+      </div>
+
+      <div class="flex lg:hidden justify-center">
+        <div class="w-[400px] sm:w-[900px]">
+          <Flicking :options="options" :plugins="plugins" class="mt-10 py-3">
+            <div v-for="item, index in team" :key="index" class="flex flex-col items-start gap-3 p-5 justify-start">
+                <div :class="['w-[288px] h-[310px] bg-cover bg-center rounded-xl', item.imageUrl]" />
+                <p class="font-semibold capitalize text-3xl">{{item.name}}</p>
+                <p class="font-medium text-xl text-gray-700">{{item.title}}</p>
+            </div>
+          </Flicking>
         </div>
       </div>
     </div>
