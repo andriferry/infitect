@@ -5,7 +5,7 @@ import { ref } from 'vue';
 const solution = ref(
   [
     {
-      backgroundColor: 'bg-secondarycolor',
+      class: 'bg-secondarycolor order-1 sm:order-1',
       icon: {
         font: mdiAutoFix,
         color: 'text-white',
@@ -21,7 +21,7 @@ const solution = ref(
       }, 
     },
     {
-      backgroundColor: 'bg-white',
+      class: 'bg-white order-2 sm:order-2',
       icon: {
         font: mdiCrownOutline,
         color: 'text-secondarycolor',
@@ -37,7 +37,7 @@ const solution = ref(
       }, 
     },
     {
-      backgroundColor: 'bg-white',
+      class: 'bg-white order-4 sm:order-3',
       icon: {
         font: mdiCrownOutline,
         color: 'text-secondarycolor',
@@ -53,7 +53,7 @@ const solution = ref(
       }, 
     },
     {
-      backgroundColor: 'bg-secondarycolor',
+      class: 'bg-secondarycolor order-3 sm:order-4',
       icon: {
         font: mdiAutoFix,
         color: 'text-white',
@@ -75,12 +75,12 @@ const solution = ref(
 
 
 <template>
-  <div class="justify-between items-center mt-20 w-full grid grid-flow-col gap-4 auto-cols-auto">
-    <div class="grid grid-cols-2 gap-3">
-      <div v-for="(item, index) in solution" :key="index" :class="[item.backgroundColor , 'w-[322px] rounded-2xl']">
+  <div class="justify-between items-center mt-20 gap-4 w-full grid grid-flow-row md:grid-flow-col auto-cols-auto">
+    <div class="p-3 grid grid-cols-auto sm:grid-cols-2 md:order-1 order-2 gap-3">
+      <div v-for="(item, index) in solution" :key="index" :class="[item.class , 'w-full md:w-[322px] rounded-2xl']">
         <div class="container flex gap-5 flex-col justify-start p-8">
           <div :class="[item.icon.color , 'items-center w-14 h-14 flex justify-center rounded-full']" :style="item.icon.backgroundColor">
-            <icon :icon="item.icon.font"></icon>
+            <icon :icon="item.icon.font" />
           </div>
 
           <p :class="[item.title.color , 'text-2xl font-semibold']">{{item.title.text}}</p>
@@ -91,14 +91,19 @@ const solution = ref(
       </div>
     </div>
 
-     <div class="p-5 w-[459px] h-[430px] flex justify-start flex-col">
-      <small class="uppercase text-secondarycolor text-lg font-medium leading-6">- why us?</small>
-      <p class="font-semibold text-5xl text-[#10141B] leading-[67px]">
+     <div class="p-5 md:order-2 order-1 w-full md:w-[459px] h-[430px] flex justify-start flex-col gap-5">
+      <small class="uppercase text-secondarycolor text-sm md:text-lg font-medium leading-6">
+        - why us?
+      </small>
+      <p class="font-semibold text-2xl w-[276px] md:text-5xl text-[#10141B] leading-9 md:leading-[67px]">
         Your Wonderful Business is our First priority
       </p>
-      <p class="subtitle text-base font-medium leading-7 text-slate-700 mt-6">
+      <p class="subtitle md:text-base text-[13px] w-[276px] font-medium leading-7 text-slate-700">
         We prioritize your successful business mission and vission with our wonderful features that can help you manage your days.
       </p>
+      <button class="rounded-full text-white bg-secondarycolor flex items-center justify-center gap-2 w-[154px] h-[48px] font-medium text-[16px]">
+        Get Started
+      </button>
     </div>
   </div>
 </template>
