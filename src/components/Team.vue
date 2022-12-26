@@ -63,19 +63,19 @@ const team = ref(
     <div class="container">
       <div class="title p-3">
         <p class="text-[18x] text-secondarycolor font-medium leading-6 uppercase">- The Team</p>
-        <p class="font-semibold text-[#10141B] w-[340px] lg:w-[640px] mt-3 text-[24px] lg:text-[48px]">
+        <p class="font-semibold text-[#10141B] w-[340px] lg:w-[640px] md:w-[532px] md:text-[32px] mt-3 text-[24px] lg:text-[48px]">
           Meet our professional and experience teachers in here
         </p>
       </div>
-      <div class="lg:grid hidden grid-cols-4 gap-6 py-5">
+      <div class="md:grid hidden md:grid-cols-3 xl:grid-cols-4 gap-6 py-5">
         <div v-for="item, index in team" :key="index" class="flex flex-col items-start gap-3 justify-start">
-          <div :class="['w-[288px] h-[310px] bg-cover bg-center rounded-xl', item.imageUrl]"></div>
-          <p class="font-semibold capitalize text-3xl">{{item.name}}</p>
-          <p class="font-medium text-xl text-gray-700">{{item.title}}</p>
+          <div :class="['xl:w-[288px] md:w-[213px] md:h-[240px] lg:w-full lg:h-[350px] xl:h-[310px] bg-cover bg-center rounded-xl', item.imageUrl]"></div>
+          <p class="font-semibold capitalize lg:text-3xl md:text-2xl">{{item.name}}</p>
+          <p class="font-medium lg:text-xl md:text-base text-gray-700">{{item.title}}</p>
         </div>
       </div>
 
-      <div class="flex lg:hidden justify-center">
+      <div class="flex md:hidden justify-center">
         <div class="w-[400px] sm:w-[900px]">
           <Flicking :options="options" :plugins="plugins" class="mt-10 py-3">
             <div v-for="item, index in team" :key="index" class="flex flex-col items-start gap-3 p-5 justify-start">
