@@ -1,8 +1,10 @@
 <script setup>
 import { ref } from 'vue';
-import {Perspective} from '@egjs/flicking-plugins';
+import { AutoPlay } from "@egjs/flicking-plugins";
 
-
+const plugins = ref([
+  new AutoPlay({ duration: 2000, direction: "NEXT", stopOnHover: false })
+])
 const options = ref({
   renderOnlyVisible: true,
   circular: true,
@@ -64,13 +66,14 @@ const testimonials = ref(
           </div>
         </div>
       </div>
+      
 
        <div class="flex lg:hidden justify-center">
-          <div class="w-[1388px]">
-            <!-- <Flicking :options="options" class="mt-10 py-3">
-              <div v-for="(data, index) in testimonials" :key="index" class="flex flex-col p-2 gap-4">
+          <div class="w-[400px] sm:w-[900px]">
+            <Flicking :options="options" :plugins="plugins" class="mt-10 py-3">
+              <div v-for="(data, index) in testimonials" :key="index" class="flex w-[400px] flex-col p-2 gap-5">
                 <p class="text-base font-medium leading-7">“Infinitech is the best team for this year! I am very appreciated with their works, especially when they helped me to grow up our business.”</p>
-                <div class="flex gap-5 items-center">
+                <div class="flex mt-3 gap-5 items-center">
                   <div class="w-16 h-16 bg-cover rounded-full" :class="data.imageUrl"></div>
                   <div class="flex gap-2 justify-start flex-col">
                     <p class="text-base font-semibold">{{data.name}}</p>
@@ -78,18 +81,7 @@ const testimonials = ref(
                   </div>
                 </div>
               </div>
-            </Flicking> -->
-
-             <div v-for="(data, index) in testimonials" :key="index" class="flex mt-4 flex-col p-2 gap-4">
-                <p class="text-base font-medium leading-7">“Infinitech is the best team for this year! I am very appreciated with their works, especially when they helped me to grow up our business.”</p>
-                <div class="flex gap-5 items-center">
-                  <div class="w-16 h-16 bg-cover rounded-full" :class="data.imageUrl"></div>
-                  <div class="flex gap-2 justify-start flex-col">
-                    <p class="text-base font-semibold">{{data.name}}</p>
-                    <p class="text-xs text-[#445160E0]/75 font-medium">CTO at {{data.companyName}}</p>
-                  </div>
-                </div>
-              </div>
+            </Flicking>
           </div>
         </div>
     </div>
