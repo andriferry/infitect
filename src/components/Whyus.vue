@@ -75,7 +75,7 @@ const solution = ref(
 
 
 <template>
-  <div class="justify-between items-center mt-20 gap-4 w-full grid grid-flow-row md:grid-flow-col auto-cols-auto">
+  <div class="p-1 justify-between items-center mt-20 gap-4 w-full grid grid-flow-row md:grid-flow-col auto-cols-auto">
     <div class="p-3 grid grid-cols-auto sm:grid-cols-2 md:order-1 order-2 gap-3">
       <div v-for="(item, index) in solution" :key="index" :class="[item.class , 'w-full md:w-[200px] lg:w-[322px]  rounded-2xl']">
         <div class="container flex gap-5 flex-col justify-start md:p-4 p-8 lg:p-8 lg:h-80">
@@ -91,19 +91,22 @@ const solution = ref(
       </div>
     </div>
 
-    <div class="p-5 md:order-2 order-1 w-full md:w-[459px] h-[430px] flex justify-start flex-col gap-5">
-      <small class="uppercase text-secondarycolor text-sm md:text-lg font-medium leading-6">
-        - why us?
-      </small>
-      <p class="font-semibold text-2xl w-[276px] md:text-5xl text-[#10141B] leading-9 md:leading-[67px]">
-        Your Wonderful Business is our First priority
-      </p>
-      <p class="subtitle md:text-base text-[13px] w-[276px] font-medium leading-7 text-slate-700">
-        We prioritize your successful business mission and vission with our wonderful features that can help you manage your days.
-      </p>
-      <button class="rounded-full text-white bg-secondarycolor flex items-center justify-center gap-2 w-[154px] h-[48px] font-medium text-[16px]">
-        Get Started
-      </button>
+    <div class="p-5 md:order-2 order-1 items-center w-full lg:w-[341px] xl:w-[523px] h-full flex">
+      <div class="flex w-full flex-col gap-5">
+        <small class="uppercase text-secondarycolor text-sm md:text-lg font-medium leading-6">
+          - why us?
+        </small>
+        <p class="font-semibold text-2xl md:text-[32px] xl:text-5xl lg:text-3xl lg:w-full md:leading-[48px] w-[276px] text-[#10141B] leading-9 lg:leading-[48px]
+           xl:leading-[67px]">
+          Your Wonderful Business is our First priority
+        </p>
+        <p class="subtitle md:text-sm md:leading-8 text-[13px] w-[276px] font-medium leading-7 text-slate-700">
+          We prioritize your successful business mission and vission with our wonderful features that can help you manage your days.
+        </p>
+        <button class="rounded-full text-white bg-secondarycolor flex items-center justify-center gap-2 w-[154px] h-[48px] font-medium text-[16px]">
+          Get Started
+        </button>
+      </div>
     </div>
   </div>
 </template>
