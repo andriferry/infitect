@@ -76,7 +76,7 @@ const team = ref(
       </div>
 
       <div class="flex md:hidden justify-center">
-        <div class="w-[400px] sm:w-[900px]">
+        <div class="w-[400px]">
           <Flicking :options="options" :plugins="plugins" class="mt-10 py-3">
             <div v-for="item, index in team" :key="index" class="flex flex-col items-start gap-3 p-5 justify-start">
                 <div :class="['w-[288px] h-[310px] bg-cover bg-center rounded-xl', item.imageUrl]" />

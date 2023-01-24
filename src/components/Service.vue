@@ -35,23 +35,23 @@ const ourService = ref(
   <div class="w-full mt-36 flex justify-center">
     <div class="container">
       <div class="flex text-gray-900 justify-center">
-        <h1 class="font-semibold w-[860px] text-[40px] text-center">
+        <h1 class="font-semibold w-[860px] xl:w-[785px] xl:leading-[72px] capitalize text-2xl leading-9 px-[30px] md:text-[40px] text-center">
           Our Professional Services To Help your business
         </h1>
       </div>
 
-      <div class="flex mt-24 justify-center w-full">
-        <div class="grid mb-20 grid-flow-col gap-4 auto-cols-auto">
+      <div class="mt-10 w-full">
+        <div class="mb-20 grid grid-cols-auto sm:grid-cols-2 md:grid-cols-2 xl:grid-flow-col gap-5 px-4">
           <div class="flex flex-col items-center gap-4" v-for="(service, index) in ourService" :key="index">
-            <div :class="['w-[288px] rounded-xl bg-cover h-[308px]',service.imgUrl]"></div>
-            <div class="w-[288px] mt-auto px-3">
-              <p class="w-full text-[32px] capitalize font-semibold leading-10 text-slate-700">
+            <div :class="['w-full rounded-xl bg-cover h-[308px]',service.imgUrl]" />
+            <div class="w-full mt-auto px-3">
+              <p class="w-full text-xl sm:text-[32px] capitalize font-semibold leading-10 text-slate-700">
                 {{service.title}}
               </p>
 
               <ul class="mt-5 flex flex-col gap-3">
                 <li v-for="item, index in service.serviceList" :key="index" class="text-base font-medium flex gap-3">
-                  <icon class="text-[#1AB687]" :icon="mdiCheckCircle"></icon>
+                  <icon class="text-[#1AB687]" :icon="mdiCheckCircle" />
                   <span class="text-slate-700 text-sm">
                     {{item}}
                   </span>
@@ -66,8 +66,3 @@ const ourService = ref(
   </div>
 </template>
 
-
-
-<style>
-
-</style>
