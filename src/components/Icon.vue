@@ -14,11 +14,7 @@ const props = defineProps({
 <template>
   <span class="icon">
     <svg fill="currentColor" viewBox="0 0 24 24" :width="size" :height="size">
-      <path :d="icon"></path>
+      <path :d="icon" />
     </svg>
   </span>
 </template>
-
-<style>
-
-</style>
