@@ -77,21 +77,21 @@ const solution = ref(
 <template>
   <div class="justify-between items-center mt-20 gap-4 w-full grid grid-flow-row md:grid-flow-col auto-cols-auto">
     <div class="p-3 grid grid-cols-auto sm:grid-cols-2 md:order-1 order-2 gap-3">
-      <div v-for="(item, index) in solution" :key="index" :class="[item.class , 'w-full md:w-[322px] rounded-2xl']">
-        <div class="container flex gap-5 flex-col justify-start p-8">
+      <div v-for="(item, index) in solution" :key="index" :class="[item.class , 'w-full md:w-[200px] lg:w-[322px]  rounded-2xl']">
+        <div class="container flex gap-5 flex-col justify-start md:p-4 p-8 lg:p-8 lg:h-80">
           <div :class="[item.icon.color , 'items-center w-14 h-14 flex justify-center rounded-full']" :style="item.icon.backgroundColor">
             <icon :icon="item.icon.font" />
           </div>
 
-          <p :class="[item.title.color , 'text-2xl font-semibold']">{{item.title.text}}</p>
-          <p :class="[item.subtitle.color , 'text-base font-medium leading-7']">
+          <p :class="[item.title.color , 'text-2xl lg:text-2xl md:text-lg font-semibold md:leading-8']">{{item.title.text}}</p>
+          <p :class="[item.subtitle.color , 'text-[13px] lg:text-base font-medium leading-7']">
             {{item.subtitle.text}}
           </p>
         </div>
       </div>
     </div>
 
-     <div class="p-5 md:order-2 order-1 w-full md:w-[459px] h-[430px] flex justify-start flex-col gap-5">
+    <div class="p-5 md:order-2 order-1 w-full md:w-[459px] h-[430px] flex justify-start flex-col gap-5">
       <small class="uppercase text-secondarycolor text-sm md:text-lg font-medium leading-6">
         - why us?
       </small>
