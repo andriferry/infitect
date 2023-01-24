@@ -100,7 +100,7 @@ const solution = ref(
            xl:leading-[67px]">
           Your Wonderful Business is our First priority
         </p>
-        <p class="subtitle md:text-sm md:leading-8 text-[13px] w-[276px] font-medium leading-7 text-slate-700">
+        <p class="subtitle md:text-sm md:leading-8 text-[13px] w-[276px] xl:w-full font-medium leading-7 text-slate-700">
           We prioritize your successful business mission and vission with our wonderful features that can help you manage your days.
         </p>
         <button class="rounded-full text-white bg-secondarycolor flex items-center justify-center gap-2 w-[154px] h-[48px] font-medium text-[16px]">
@@ -110,9 +110,3 @@ const solution = ref(
     </div>
   </div>
 </template>
-
-
-
-<style>
-
-</style>
