@@ -44,11 +44,14 @@ const client = ref([
 <template>
   <div class="w-full flex justify-center">
     <div class="container relative">
-      <div class="grid grid-cols-3 gap-3 relative z-30 -mt-60">
-        <div v-for="url, index in heroImage" :key="index" :class="['rounded-2xl bg-cover w-[402px] h-[420px]' , url]"></div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 relative z-30 p-5 -mt-40">
+        <div v-for="url, index in heroImage" :key="index" 
+        :class="['rounded-2xl bg-cover w-full h-[325px] sm:h-[260px] col-span-1' , url]" 
+      />
+      <!-- w-[402px] -mt-60 -->
       </div>
 
-      <div class="flex text-gray-900 mt-36 justify-center relative  items-center flex-col">
+      <div class="flex text-gray-900 mt-36 sm:mt-20 justify-center relative  items-center flex-col">
         <h1 class="text-2xl w-[313px] sm:w-[486px] md:w-[694px] lg:w-[84%] lg:leading-[60px]
           sm:leading-[48px] lg:text-[40px]  md:text-[32px] text-center font-semibold leading-10">
           We Helped 30+ Companies From Medium Until Big Scale Companies

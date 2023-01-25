@@ -41,7 +41,7 @@ const menu = ref(
           </div>
 
           <button class="rounded-full bg-secondarycolor flex items-center justify-center gap-2 w-[154px] h-[48px] font-medium text-[16px]">
-            <icon :icon="mdiEmail"></icon>
+            <icon :icon="mdiEmail" />
             Contact us
           </button>
         </nav>
@@ -67,8 +67,3 @@ const menu = ref(
     <img class="absolute z-0 -left-[50px] -bottom-[250px]" src="@/assets/bigcircle.png" alt="">
   </div>
 </template>
-
-
-<style scoped>
-
-</style>
