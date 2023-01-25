@@ -68,8 +68,10 @@ const team = ref(
         </p>
       </div>
       <div class="md:grid hidden md:grid-cols-3 xl:grid-cols-4 gap-6 py-5">
-        <div v-for="item, index in team" :key="index" class="flex flex-col items-center gap-3 justify-start">
-          <div :class="['xl:w-[288px] md:w-[213px] md:h-[240px] lg:w-full lg:h-[350px] xl:h-[310px] bg-cover bg-center rounded-xl', item.imageUrl]"></div>
+        <div v-for="(item, index) in team" :key="index" class="flex flex-col items-center gap-3 justify-start">
+          <div :class="
+            ['xl:w-[288px] md:w-[213px] md:h-[240px] lg:w-full lg:h-[350px] xl:h-[310px] bg-cover bg-center rounded-xl', item.imageUrl]" 
+          />
           <p class="font-semibold capitalize lg:text-3xl md:text-2xl">{{item.name}}</p>
           <p class="font-medium lg:text-xl md:text-base text-gray-700">{{item.title}}</p>
         </div>
@@ -78,7 +80,7 @@ const team = ref(
       <div class="flex md:hidden justify-center">
         <div class="w-[400px]">
           <Flicking :options="options" :plugins="plugins" class="mt-10 py-3">
-            <div v-for="item, index in team" :key="index" class="flex flex-col items-start gap-3 p-5 justify-start">
+            <div v-for="(item, index) in team" :key="index" class="flex flex-col items-start gap-3 p-5 justify-start">
                 <div :class="['w-[288px] h-[310px] bg-cover bg-center rounded-xl', item.imageUrl]" />
                 <p class="font-semibold capitalize text-3xl">{{item.name}}</p>
                 <p class="font-medium text-xl text-gray-700">{{item.title}}</p>
