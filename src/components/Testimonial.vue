@@ -45,11 +45,12 @@ const testimonials = ref(
   <div class="flex mt-20 mb-20 justify-center w-full">
     <div class="container p-5">
       <div class="title">
-        <p class="text-sm md:text-lg text-secondarycolor font-medium leading-6 uppercase">
+        <p class="text-base md:text-lg text-secondarycolor font-medium leading-6 uppercase">
           - testimonials
         </p>
         <p class="font-semibold tracking-widest
-           sm:tracking-normal capitalize text-[#10141B] w-full md:w-[640px] mt-3 text-2xl leading-9 lg:leading-[67px] md:text-5xl">
+           sm:tracking-normal capitalize text-[#10141B] w-full md:w-[391px] lg:w-[587px] md:leading-[48px] mt-3 text-2xl 
+           leading-9 lg:leading-[67px] md:text-[32px] lg:text-5xl">
           here are what our customers said about us
         </p>
       </div>
@@ -70,7 +71,7 @@ const testimonials = ref(
       
 
        <div class="flex lg:hidden justify-center">
-          <div class="w-[400px] sm:w-[600px]">
+          <div class="w-[400px] sm:w-[600px] md:w-[714px]">
             <Flicking :options="options" :plugins="plugins" class="mt-10 py-3">
               <div v-for="(data, index) in testimonials" :key="index" class="flex w-[400px] flex-col p-5 gap-5">
                 <p class="text-base px-5 font-medium leading-7">“Infinitech is the best team for this year! I am very appreciated with their works, especially when they helped me to grow up our business.”</p>

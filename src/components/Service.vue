@@ -35,7 +35,7 @@ const ourService = ref(
   <div class="w-full mt-36 flex justify-center">
     <div class="container">
       <div class="flex text-gray-900 justify-center">
-        <h1 class="font-semibold w-[860px] xl:w-[785px] xl:leading-[72px] capitalize text-2xl leading-9 px-[30px] md:text-[40px] text-center">
+        <h1 class="font-semibold w-[860px] md:w-[500px] md:leading-[48px] xl:w-[785px] xl:leading-[72px] capitalize text-2xl leading-9 px-[30px] md:text-[32px] lg:text-[40px] text-center">
           Our Professional Services To Help your business
         </h1>
       </div>
