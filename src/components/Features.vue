@@ -8,6 +8,8 @@ const heroImage = ref([
   "bg-[url('https://images.unsplash.com/photo-1608306448197-e83633f1261c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80')]"
 ]);
 
+const ownerImg = ref("bg-[url('https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80')]")
+
 const client = ref([
   {
     text: 'microsoft',
@@ -54,32 +56,19 @@ const client = ref([
           </div>
         </div>
 
-        <div class="w-full mt-52 px-20 flex items-center justify-between">
-          <div class="flex flex-col relative gap-5">
-            <h1 class="text-[40px] quote w-[620px] text-[#121212] font-semibold">
-              “We are on a mission to build international business cooperations that could open win-to-win partnerships.”
+        <div class="w-full gap-10 mt-52 p-3 md:p-5 grid grid-cols-1 sm:grid-cols-2">
+          <div class="flex flex-col p-1 relative gap-5 sm:justify-center">
+            <h1 class="text-2xl leading-9 quote w-full text-[#121212] font-semibold">
+              “We are on a mission to build international business cooperations that 
+                could open win-to-win partnerships.”
             </h1>
-            <p class="text-lg font-medium">-James Morgan, 
+            <p class="text-base font-medium">-James Morgan, 
               <span class="text-secondarycolor">Founder and CTO Infitech</span>
             </p>
           </div>
-          <div class="w-[508px] rounded-xl bg-cover h-[551px] bg-[url('https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80')]"></div>
+          <div class="rounded-xl bg-cover h-[415px]" :class="ownerImg" />
         </div>
       </div>
     </div>
   </div>
 </template>
-
-
-<style scoped>
-.quote::before {
-  content: '“';
-  color: #4b5563;
-  font-size: 500px;
-  opacity: 0.1;
-  position: absolute;
-  top: -280px;
-  left: -70px;
-}
-
-</style>
