@@ -53,7 +53,7 @@ const client = ref([
 
       <div class="flex text-gray-900 mt-36 sm:mt-20 justify-center relative  items-center flex-col">
         <h1 class="text-2xl w-[313px] sm:w-[486px] md:w-[694px] lg:w-[84%] lg:leading-[60px]
-          sm:leading-[48px] lg:text-[40px]  md:text-[32px] text-center font-semibold leading-10">
+          sm:leading-[48px] lg:text-[40px] md:text-[32px] text-center font-semibold leading-10">
           We Helped 30+ Companies From Medium Until Big Scale Companies
         </h1>
 
