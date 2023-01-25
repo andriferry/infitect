@@ -13,23 +13,28 @@ const ownerImg = ref("bg-[url('https://images.unsplash.com/photo-1591084728795-1
 const client = ref([
   {
     text: 'microsoft',
-    icon: mdiMicrosoft
+    icon: mdiMicrosoft,
+    class: 'col-span-1 sm:col-span-3'
   },
   {
     text: 'google',
-    icon: mdiGoogle
+    icon: mdiGoogle,
+    class: 'col-span-1 sm:col-span-3'
   },
   {
     text: 'dropbox',
-    icon: mdiDropbox
+    icon: mdiDropbox,
+    class: 'col-span-1 sm:col-span-3'
   },
   {
     text: 'xbox',
-    icon: mdiMicrosoftXbox
+    icon: mdiMicrosoftXbox,
+    class: 'col-span-1 sm:col-span-5'
   },
   {
     text: 'trello',
-    icon: mdiTrello
+    icon: mdiTrello,
+    class: 'col-span-2 sm:col-span-3'
   },
 ]);
 
@@ -43,14 +48,19 @@ const client = ref([
       </div>
 
       <div class="flex text-gray-900 mt-36 justify-center relative  items-center flex-col">
-        <h1 class="font-semibold w-[860px] text-[40px] text-center">
+        <!-- <h1 class="font-semibold w-[860px] text-[40px] text-center">
+          We Helped 30+ Companies From Medium Until Big Scale Companies
+        </h1> -->
+
+        <h1 class="text-2xl w-[313px] sm:w-[486px] sm:leading-[48px] text-center font-semibold leading-10">
           We Helped 30+ Companies From Medium Until Big Scale Companies
         </h1>
 
-        <div class="w-full flex items-center justify-center">
-          <div class="mt-6 grid grid-flow-col auto-cols-max">
-            <div v-for="data, index in client" :key="index" class="flex p-3 justify-center text-gray-600 gap-4 text-[38px] items-center">
-              <icon size="52" :icon="data.icon"></icon>
+        <div class="w-full mt-6 flex items-center justify-center">
+          <div class="grid p-4 gap-3 grid-cols-2 sm:grid-cols-9">
+            <div v-for="(data, index) in client" :key="index" :class="data.class"
+              class="flex justify-center p-3 text-gray-600 gap-2 text-2xl items-center">
+              <icon size="52" :icon="data.icon" />
               <p class="font-semibold capitalize">{{data.text}}</p>
             </div>
           </div>
