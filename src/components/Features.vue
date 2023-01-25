@@ -56,9 +56,9 @@ const client = ref([
           </div>
         </div>
 
-        <div class="w-full gap-10 mt-52 p-3 grid grid-cols-1 sm:grid-cols-2">
-          <div class="flex flex-col p-1 relative gap-5 sm:justify-center">
-            <h1 class="text-2xl leading-9 quote w-full text-[#121212] font-semibold">
+        <div class="w-full gap-10 lg:gap-0 mt-52 p-3 grid grid-cols-1 sm:grid-cols-2">
+          <div class="flex flex-col p-1 lg:p-5 relative gap-5 sm:justify-center">
+            <h1 class="text-2xl lg:text-3xl leading-9 lg:leading-[50px] quote w-full text-[#121212] font-semibold">
               “We are on a mission to build international business cooperations that 
                 could open win-to-win partnerships.”
             </h1>
@@ -69,7 +69,8 @@ const client = ref([
 
           <div class="flex justify-center w-full">
             <div 
-              class="rounded-xl w-full bg-right bg-cover h-[415px] lg:h-[551px] md:h-[315px] md:w-[370px] lg:w-[408px]" :class="ownerImg" />
+              class="rounded-xl w-full bg-right bg-cover h-[415px] lg:h-[430px] 
+                md:h-[315px] md:w-[370px] lg:w-[408px]" :class="ownerImg" />
           </div>
         </div>
       </div>
