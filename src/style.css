@@ -8,7 +8,7 @@
     content: '“';
     color: #4b5563;
     font-size: 300px;
-    opacity: 0.1;
+    opacity: .1;
     position: absolute;
     top: 46px;
     left: -32px;
@@ -30,6 +30,14 @@
     .quote::before {
       top: 140px;
       left: -11px;
+    }
+  }
+
+  @media screen(xl) {
+    .quote::before {
+      top: 185px;
+      left: -11px;
+      font-size: 500px;
     }
   }
   

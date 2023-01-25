@@ -57,12 +57,12 @@ const client = ref([
         </div>
 
         <div class="w-full gap-10 lg:gap-0 mt-52 p-3 grid grid-cols-1 sm:grid-cols-2">
-          <div class="flex flex-col p-1 lg:p-5 relative gap-5 sm:justify-center">
-            <h1 class="text-2xl lg:text-3xl leading-9 lg:leading-[50px] quote w-full text-[#121212] font-semibold">
+          <div class="flex flex-col p-1 lg:p-5 xl:p-10 relative gap-5 sm:justify-center">
+            <h1 class="text-2xl lg:text-3xl xl:text-[40px] leading-9 lg:leading-[50px] quote w-full xl:w-[620px] xl:leading-[68px] text-[#121212] font-semibold">
               “We are on a mission to build international business cooperations that 
                 could open win-to-win partnerships.”
             </h1>
-            <p class="text-base font-medium">-James Morgan, 
+            <p class="text-base xl:text-lg font-medium">-James Morgan, 
               <span class="text-secondarycolor">Founder and CTO Infitech</span>
             </p>
           </div>
@@ -70,7 +70,7 @@ const client = ref([
           <div class="flex justify-center w-full">
             <div 
               class="rounded-xl w-full bg-right bg-cover h-[415px] lg:h-[430px] 
-                md:h-[315px] md:w-[370px] lg:w-[408px]" :class="ownerImg" />
+                md:h-[315px] md:w-[370px] lg:w-[408px] xl:h-[551px] xl:w-[508px]" :class="ownerImg" />
           </div>
         </div>
       </div>
