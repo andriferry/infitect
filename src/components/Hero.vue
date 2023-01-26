@@ -93,6 +93,12 @@ const menu = ref(
             <icon :icon="mdiClose" />
           </button>
         </div>
+
+        <ul>
+          <li v-for="(menuItem, index) in menu" :key="index" class="text-xl font-medium p-3 text-slate-500 capitalize">
+            {{menuItem.linkName}} 
+          </li>
+        </ul>
       </div>
     </div>
   </div>
