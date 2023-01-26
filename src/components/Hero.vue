@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import { mdiEmail ,mdiMenu } from "@mdi/js";
+import { mdiEmail ,mdiMenu , mdiClose } from "@mdi/js";
 
 const menu = ref(
   [
@@ -41,6 +41,9 @@ const menu = ref(
             <icon :icon="mdiMenu" />
           </button>
         </nav>
+
+
+
         <!-- <nav class="text-white relative z-20 flex items-center justify-between ">
           <p class="title font-semibold text-[24px]">Infinitech.</p>
 
@@ -82,5 +85,15 @@ const menu = ref(
       src="@/assets/circle.svg" alt="">
     <img class="absolute z-0 -left-[50px] -bottom-[250px]"
       src="@/assets/bigcircle.png" alt="">
+
+    <div class="h-screen p-5 absolute block lg:hidden z-50 top-10 w-full">
+      <div class="bg-white transition ease-in-out delay-150 p-4 rounded-lg shadow-xl">
+        <div class="flex justify-end items-center">
+          <button>
+            <icon :icon="mdiClose" />
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
