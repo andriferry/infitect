@@ -2,6 +2,9 @@
 import { ref } from "vue";
 import { mdiEmail ,mdiMenu , mdiClose } from "@mdi/js";
 
+
+//State
+const openMenu = ref(false)
 const menu = ref(
   [
     {
@@ -37,7 +40,7 @@ const menu = ref(
           <p class="title font-semibold text-[24px]">Infinitech.</p>
 
 
-          <button>
+          <button @click="openMenu = !openMenu">
             <icon :icon="mdiMenu" />
           </button>
         </nav>
@@ -86,20 +89,24 @@ const menu = ref(
     <img class="absolute z-0 -left-[50px] -bottom-[250px]"
       src="@/assets/bigcircle.png" alt="">
 
-    <div class="h-screen p-5 absolute block lg:hidden z-50 top-10 w-full">
-      <div class="bg-white transition ease-in-out delay-150 p-4 rounded-lg shadow-xl">
-        <div class="flex justify-end items-center">
-          <button>
-            <icon :icon="mdiClose" />
-          </button>
-        </div>
+    <Transition name="slide-fade">
+      <div v-if="openMenu" 
+        class="h-screen p-5 absolute block lg:hidden z-50 top-10 w-full"
+      >
+        <div class="bg-white transition ease-in-out delay-150 p-4 rounded-lg shadow-xl">
+          <div class="flex justify-end items-center">
+            <button @click="openMenu = !openMenu">
+              <icon :icon="mdiClose" />
+            </button>
+          </div>
 
-        <ul>
-          <li v-for="(menuItem, index) in menu" :key="index" class="text-xl font-medium p-3 text-slate-500 capitalize">
-            {{menuItem.linkName}} 
-          </li>
-        </ul>
+          <ul>
+            <li v-for="(menuItem, index) in menu" :key="index" class="text-xl font-medium p-3 text-slate-500 capitalize">
+              {{menuItem.linkName}} 
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </Transition>
   </div>
 </template>
