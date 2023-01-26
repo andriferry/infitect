@@ -33,7 +33,7 @@ const menu = ref(
 
 
 <template>
-  <div class="w-full relative h-[846px] sm:h-[180vh] lg:min-h-screen bg-basecolor">
+  <div class="w-full relative h-[846px] sm:h-[180vh] md:h-[70vh] lg:h-screen bg-basecolor">
     <div class="flex justify-center">
       <div class="container">
         <nav class="text-white p-5 relative z-20 flex items-center justify-between">
@@ -57,24 +57,22 @@ const menu = ref(
           </button>
         </nav>
 
-
-        <div class="h-96 flex justify-center items-center w-full">
-          <div class="grid grid-cols-1 lg:grid-cols-2 text-white">
-            <div class="w-full flex justify-center">
+        <div class="h-96 flex items-center w-full">
+          <div class="flex flex-col lg:flex-col gap-5 xl:flex-row w-full justify-between items-center text-white">
+            <div>
               <p class="font-semibold text-[32px] sm:text-5xl leading-[50px] 
-                  w-[312px] sm:w-[612px] sm:leading-[72px] text-center lg:text-[64px] lg:w-[700px]">
+                  w-[312px] sm:w-[612px] xl:leading-[90px] sm:leading-[72px] text-center xl:text-start lg:text-[64px] lg:w-[714px]">
                 We Bring You To The Future Of Technology
               </p>
             </div>
-        
-            <div class="w-full flex flex-col gap-5 justify-center mt-10">
-              <div class="w-full flex justify-center">
-                <p class="text-sm w-[313px] sm:w-[415px] text-center leading-loose">
-                  Infinitech is an IT company that could transform your digital problems into a new wonderful solutions that could scale your business up.
-                </p>
-              </div>
 
-              <div class="flex justify-center">
+            <div class="flex w-[313px] sm:w-[415px] flex-col justify-center text-center xl:text-start gap-5 xl:justify-end">
+              <p class="text-sm leading-loose lg:leading-7">
+                Infinitech is an IT company that could transform 
+                your digital problems into a new wonderful solutions that could scale your business up.
+              </p>
+
+              <div class="flex justify-center xl:justify-start">
                 <button class="rounded-full bg-secondarycolor flex 
                     items-center justify-center px-4 py-3 font-medium text-base">
                   Get Started
