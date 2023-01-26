@@ -39,26 +39,24 @@ const menu = ref(
         <nav class="text-white p-5 relative z-20 flex items-center justify-between">
           <p class="title font-semibold text-[24px]">Infinitech.</p>
 
+          <div class="gap-5 hidden lg:flex">
+            <a href="#" v-for="(data , index) in menu" :key="index" class="text-base hover:underline hover:underline-offset-8 
+              hover:decoration-[3px] ease-in transition duration-150 decoration-sky-500 font-medium">
+              {{data.linkName}}
+            </a>
+          </div>
 
-          <button @click="openMenu = !openMenu">
+          <button class="rounded-full w-[154px] h-[48px] hidden lg:flex bg-secondarycolor 
+               items-center justify-center gap-2 font-medium text-base">
+            <icon :icon="mdiEmail" />
+            Contact us
+          </button>
+
+          <button class="block lg:hidden" @click="openMenu = !openMenu">
             <icon :icon="mdiMenu" />
           </button>
         </nav>
 
-
-
-        <!-- <nav class="text-white relative z-20 flex items-center justify-between ">
-          <p class="title font-semibold text-[24px]">Infinitech.</p>
-
-          <div class="flex gap-5">
-            <a class="text-[16px] hover:underline hover:underline-offset-8 hover:decoration-[3px] hover:transition ease-in duration-700 decoration-sky-500 font-medium" v-for="data, index in menu" :key="index" :href="data.linkTo">{{data.linkName}}</a>
-          </div>
-
-          <button class="rounded-full bg-secondarycolor flex items-center justify-center gap-2 w-[154px] h-[48px] font-medium text-[16px]">
-            <icon :icon="mdiEmail" />
-            Contact us
-          </button>
-        </nav> -->
 
         <div class="h-96 flex justify-center items-center w-full">
           <div class="grid grid-cols-1 lg:grid-cols-2 text-white">
