@@ -33,7 +33,7 @@ const menu = ref(
 
 
 <template>
-  <div class="w-full relative min-h-screen bg-basecolor">
+  <div class="w-full relative h-[846px] sm:h-[180vh] lg:min-h-screen bg-basecolor">
     <div class="flex justify-center">
       <div class="container">
         <nav class="text-white p-5 relative z-20 flex items-center justify-between">
@@ -61,15 +61,18 @@ const menu = ref(
         <div class="h-96 flex justify-center items-center w-full">
           <div class="grid grid-cols-1 lg:grid-cols-2 text-white">
             <div class="w-full flex justify-center">
-              <p class="font-semibold text-[32px] leading-[50px] w-[312px] text-center lg:text-[64px] lg:w-[700px]">
+              <p class="font-semibold text-[32px] sm:text-5xl leading-[50px] 
+                  w-[312px] sm:w-[612px] sm:leading-[72px] text-center lg:text-[64px] lg:w-[700px]">
                 We Bring You To The Future Of Technology
               </p>
             </div>
         
             <div class="w-full flex flex-col gap-5 justify-center mt-10">
-              <p class="text-sm w-[313px] text-center leading-loose">
-                Infinitech is an IT company that could transform your digital problems into a new wonderful solutions that could scale your business up.
-              </p>
+              <div class="w-full flex justify-center">
+                <p class="text-sm w-[313px] sm:w-[415px] text-center leading-loose">
+                  Infinitech is an IT company that could transform your digital problems into a new wonderful solutions that could scale your business up.
+                </p>
+              </div>
 
               <div class="flex justify-center">
                 <button class="rounded-full bg-secondarycolor flex 

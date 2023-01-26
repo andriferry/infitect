@@ -44,7 +44,7 @@ const client = ref([
 <template>
   <div class="w-full flex justify-center">
     <div class="container relative">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 relative z-30 p-5 -mt-40">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 relative z-30 p-5 sm:-mt-56 -mt-96">
         <div v-for="url, index in heroImage" :key="index" 
         :class="['rounded-2xl bg-cover w-full h-[325px] sm:h-[260px] col-span-1' , url]" 
       />
